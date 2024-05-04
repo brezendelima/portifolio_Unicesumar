@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.cdnfonts.com/css/beautiful-police-officer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portifolio Bruno Rezende</title>
+</head>
+<body>
+    <!---Cabeçalho-Main-->
+    <div class="background">
+        <nav>
+            <h2 class="logo">Bruno<span>Rezende</span></h2><!--Logo-->
+            <ul class="cabeçalho-link">
+                <li><a onclick="functionInicio()">Inicio</a></li>
+                <li><a onclick="functionsobremim()">Sobre mim</a></li>
+                <li><a onclick="functionProjetos()">Meus Projetos</a></li>
+                <li><a onclick="functionContato()">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="inicio" class="Main">
+            <h4>Olá, meu nome é</h4>
+            <h1>Bruno <span>Rezende</span></h1>
+            <h3>Eu sou um estudante de engenharia de software</h3>
+        </div>
+    </div>
+
+    <!--Começo-da-seção-sobre-->
+    <section id="main-sobre" class="background-color-Sobre">
+        <div class="main-sobre">
+            <img src="teste2.JPG">
+            <div class="Text-sobre">
+                <h2>Sobre-Mim</h2>
+                <h5>Estudante <span>e futuro engenheiro</span></h5>
+                <p>Eu sou um estudante de engenharia de software, atualmente no terceiro período da graduação na Unicesumar, pretendo me especializar na área de DBA e DevOps.</p>
+                <button type="button">Esse botão não faz nada😁</button><!--Button-->
+            </div>
+        </div>
+    </section>
+
+    <!--Começo-da-seção-nossos-serviços-->
+
+    <div id="projetos" class="Container-projetos">
+        <div class="title">
+            <h2>Meus Projetos</h2>
+        </div><!--title-->
+
+        <div class="cartoesBox">
+            <div class="Card">
+                <i class="fas fa-bars"></i>
+                <h5>To Do List</h5>
+                <div class="Paragrafo-button">
+                    <p>To Do List feito durante a graduação utilizando de localStorage </p>
+                    <button type="button">Me leve lá</button>
+                </div>
+            </div>
+
+            <div class="Card">
+                <i class="fas fa-user"></i>
+                <h5>Jogos</h5>
+                <div class="Paragrafo-button">
+                    <p>Futuros jogos desenvolvidos na graduação que deverão estar presentes nesse portfolio</p>
+                    <button type="button">Me leve lá</button>
+                </div>
+            </div>
+
+            <div class="Card">
+                <i class="fas fa-bell"></i>
+                <h5>Lorem Ipsum</h5>
+                <div class="Paragrafo-button">
+                    <p>Fiquei sem ideia do que colocar porque não tenho tanto conhecimento na área, mas fica aqui como um tapa buraco</p>
+                    <button type="button">Me leve lá</button><!--button-->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Contatos-->
+    <div id="contato" class="me-contate">
+        <p>Entre em contato comigo, responderei assim que puder!</p>
+        <button type="button">Enviar mensagem</button>
+    </div>
+
+    <!--Rodapé--->
+    <footer>
+          <h6>Bruno Rezende</h6>
+        <p>Por favor clique nos links abaixo 😊</p>
+        <div class="Redes-sociais">
+            <a onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';"><i class="fa fa-question-circle"></i></a>
+            <a onclick="window.location.href = 'https://www.instagram.com/brezendelima/';"><i class="fab fa-instagram"></i></a>
+            <a href="#"onclick="window.location.href = 'https://www.linkedin.com/in/Bruno-Rezende-de-Lima/';"><i class="fab fa-linkedin-in"></i></a>
+        </div><!--Redes-sociais-->
+        <p class="end">May the 4th be with you</p>
+    </footer>
+
+    <script>
+        function functionInicio() {
+            const element = document.getElementById("inicio");
+            element.scrollIntoView();
+        }
+
+        function functionsobremim() {
+            const element = document.getElementById("main-sobre");
+            element.scrollIntoView();
+        }
+
+        function functionProjetos() {
+            const element = document.getElementById("projetos");
+            element.scrollIntoView();
+        }
+
+        function functionContato() {
+            const element = document.getElementById("contato");
+            element.scrollIntoView();
+        }
+    </script>
+
+</body>
+</html>
