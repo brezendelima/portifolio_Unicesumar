@@ -47,6 +47,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     displayRepositories();
 
+    // Clique tag NAV
+    document.querySelectorAll('.cabeçalho-link a').forEach(item => {
+        item.addEventListener('click', function(event) {
+            // Obtém o destino do link (o ID da seção)
+            const targetId = this.getAttribute('href').substring(1);
+
+            // Obtém a posição da seção alvo
+            const targetSection = document.getElementById(targetId);
+            const targetPosition = targetSection.offsetTop;
+
+            // Rola a página até a posição da seção alvo
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+
     // Abre o WhatsApp
     document.getElementById('btnEnviarMensagemWhatsApp').addEventListener('click', function () {
         var phoneNumber = '+5541999448022';

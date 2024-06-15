@@ -6,7 +6,7 @@
 }
 
 .background {
-    background-image: url(teste.jpg);
+    background-image: url(foto2.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -30,7 +30,7 @@ nav {
 }
 
 span {
-    color: #21f900;
+    color: #04abba;
 }
 
 nav ul li {
@@ -48,11 +48,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #21f900;
+    color: #04abba;
 }
 
 .btn {
-    background-color: #21f900;
+    background-color: #04abba;
     color: #fff;
     text-decoration: none;
     border: 2px solid transparent;
@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .Main span {
-    color: #21f900;
+    color: #04abba;
 }
 
 h1 {
@@ -85,7 +85,7 @@ h1 {
 }
 
 h4 {
-    color: #294d00;
+    color: #048483;
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -144,7 +144,7 @@ h3 {
 }
 
 button {
-    background-color: #21f900;
+    background-color: #04abba;
     color: #fff;
     text-transform: none;
     border: 2px solid transparent;
@@ -156,7 +156,7 @@ button {
 
 button:hover {
     background-color: transparent;
-    border: 2px solid #21f900;
+    border: 2px solid #04abba;
     cursor: pointer;
 }
 
@@ -201,7 +201,7 @@ button:hover {
     display: block;
     text-align: center;
     margin: 25px 0;
-    color: #21f900;
+    color: #04abba;
 }
 
 .Card:hover {
@@ -275,7 +275,7 @@ footer p {
 }
 
 .Redes-sociais a {
-    background-color: #21f900;
+    background-color: #04abba;
     width: 45px;
     height: 45px;
     padding: 15px;
@@ -296,7 +296,13 @@ footer p {
 
 .end {
     position: absolute;
-    color: #21f900;
+    color: #05bdce;
     bottom: 35px;
     font-size: 14px;
+}
+
+img{
+    border-radius: 12px;
+    width: 100%;
+    max-height: 1000px;
 }
